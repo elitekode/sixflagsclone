@@ -5,9 +5,9 @@
 		die('Not Connected: ' . mysql_error()); 
 	}
 
-	$db_selected = mysql_select_db('sixflags', $link);
+	$db_selected = mysql_select_db('pokemonbattlepark', $link);
 	if(!$db_selected){
-		die("Cannot use database sixflags :" . mysql_error());
+		die("Cannot use database pokemonbattlepark :" . mysql_error());
 	}
 
 	$query = "SELECT * FROM students";
